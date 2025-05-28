@@ -15,5 +15,14 @@ interface Usuario{
 //Utilizando a interfade usário fica assim:
 function exibirUsuario(usuario: Usuario): void {
     console.log(`Nome: ${usuario.nome}`);
-    
+    console.log(`Idade: ${usuario.idade}`);
 }
+
+exibirUsuario({nome: 'Marcos', idade: 22});
+
+//Exemplo de uma funçao que retorn arrays e tem parametros opcionais
+function listarNomes(nomes: string[]): void {
+    nomes.forEach(nome => console.log(nome));
+}
+
+listarNomes (['Ana', 'Bruno', 'Carlos']);
